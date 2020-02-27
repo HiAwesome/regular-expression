@@ -28,6 +28,8 @@ public class Data {
 
     public static final List<String> FILE_NAME_LIST_3;
 
+    public static final String REGULAR_TEXT_1 = "The phrase \"regular expression\" is often abbreviated as RegEx or regex.";
+
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
         list2.add("sales.xls");
