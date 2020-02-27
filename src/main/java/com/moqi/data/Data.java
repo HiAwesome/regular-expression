@@ -1,5 +1,7 @@
 package com.moqi.data;
 
+import com.moqi.tool.Tool;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +12,8 @@ import java.util.List;
  */
 public class Data {
 
-    public static final String HELLO = "Hello, my name is A01Ben. Please visit my website at http://www.forta.com./";
+
+    public static final String TEXT_01_TXT = Tool.getStringFromFile("test01.txt");
 
     public static final List<String> FILE_NAME_LIST_1 = Arrays.asList(
             "sales1.xls",
@@ -38,7 +41,8 @@ public class Data {
 
     public static final String REGULAR_TEXT_4 = "\\home\\ben\\sales\\";
 
-    public static final String TEXT_10_FILE_PATH = "src/main/resources/data/test10.txt";
+
+    public static final String TEXT_10_FILE_PATH = "test10.txt";
 
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);

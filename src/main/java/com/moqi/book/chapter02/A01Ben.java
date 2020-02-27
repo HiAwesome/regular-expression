@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.HELLO;
+import static com.moqi.data.Data.TEXT_01_TXT;
 
 
 /**
@@ -19,7 +19,7 @@ public class A01Ben {
      * 2020-02-27 09:59:45 INFO  A01Ben:19 - list:[Ben]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternString("Ben", HELLO);
+        List<String> list = Tool.patternString("Ben", TEXT_01_TXT);
         log.info("list:{}", list);
     }
 

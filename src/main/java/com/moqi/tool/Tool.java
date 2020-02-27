@@ -19,6 +19,8 @@ import static com.moqi.constant.Constant.EMPTY_STRING;
 @Slf4j
 public class Tool {
 
+    private static final String DATA_PREFIX = "src/main/resources/data/";
+
     /**
      * 正则匹配字符串
      */
@@ -58,7 +60,7 @@ public class Tool {
     public static String getStringFromFile(String filePath) {
 
         try {
-            return new String(Files.readAllBytes(Paths.get(filePath)));
+            return new String(Files.readAllBytes(Paths.get(DATA_PREFIX + filePath)));
         } catch (IOException e) {
             log.error("文件读取异常");
         }
