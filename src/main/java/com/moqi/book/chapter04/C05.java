@@ -5,20 +5,20 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.TEXT_09_TXT;
+import static com.moqi.data.Data.TEXT_08_TXT;
 
 /**
  * @author moqi
  * On 2/27/20 10:37
  */
 @Slf4j
-public class C03 {
+public class C05 {
 
     /**
-     * 2020-02-27 13:33:58 INFO  C03:22 - list:[\, \, \, \]
+     * 2020-02-27 13:34:23 INFO  C05:22 - list:[myArray[0]]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternString("\\\\", TEXT_09_TXT);
+        List<String> list = Tool.patternString("myArray\\[\\d]", TEXT_08_TXT);
         log.info("list:{}", list);
     }
 

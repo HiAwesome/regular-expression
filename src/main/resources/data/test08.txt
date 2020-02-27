@@ -1,1 +1,5 @@
-if (myArray[0] == 0) {}
+var myArray = new Array();
+...
+if (myArray[0] == 0) {
+...
+}
