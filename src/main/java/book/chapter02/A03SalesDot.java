@@ -14,9 +14,11 @@ import static book.chapter02.A00Data.FILE_NAME_LIST_1;
 @Slf4j
 public class A03SalesDot {
 
+    /**
+     * 2020-02-27 10:03:28 INFO  A03SalesDot:20 - list:[sales1, sales2, sales3]
+     */
     public static void main(String[] args) {
         List<String> list = Tool.patternList("sales.", FILE_NAME_LIST_1);
-        // 2020-02-27 10:03:28 INFO  A03SalesDot:20 - list:[sales1, sales2, sales3]
         log.info("list:{}", list);
     }
 
