@@ -38,6 +38,8 @@ public class Data {
 
     public static final String REGULAR_TEXT_4 = "\\home\\ben\\sales\\";
 
+    public static final String TEXT_10_FILE_PATH = "src/main/resources/data/test10.txt";
+
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
         list2.add("sales.xls");

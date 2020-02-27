@@ -1,15 +1,22 @@
 package com.moqi.tool;
 
+import lombok.extern.slf4j.Slf4j;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.moqi.constant.Constant.EMPTY_STRING;
+
 /**
  * @author moqi
  * On 2/27/20 09:51
  */
-
+@Slf4j
 public class Tool {
 
     /**
@@ -43,6 +50,20 @@ public class Tool {
         });
 
         return list;
+    }
+
+    /**
+     * 将整个文件读取为一个字符串
+     */
+    public static String getStringFromFile(String filePath) {
+
+        try {
+            return new String(Files.readAllBytes(Paths.get(filePath)));
+        } catch (IOException e) {
+            log.error("文件读取异常");
+        }
+
+        return EMPTY_STRING;
     }
 
 }
