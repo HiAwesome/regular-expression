@@ -32,6 +32,8 @@ public class Data {
 
     public static final List<String> FILE_NAME_LIST_4;
 
+    public static final String REGULAR_TEXT_2 = "<BODY COLOR=\"#336633\" TEXT=\"#FFFFFF\">";
+
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
         list2.add("sales.xls");
