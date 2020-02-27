@@ -14,6 +14,10 @@ public class Data {
 
 
     public static final String TEXT_01_TXT = Tool.getStringFromFile("test01.txt");
+    public static final String TEXT_02_TXT = Tool.getStringFromFile("test02.txt");
+    public static final String TEXT_03_TXT = Tool.getStringFromFile("test03.txt");
+    public static final String TEXT_04_TXT = Tool.getStringFromFile("test04.txt");
+    public static final String TEXT_05_TXT = Tool.getStringFromFile("test05.txt");
 
     public static final List<String> FILE_NAME_LIST_1 = Arrays.asList(
             "sales1.xls",
