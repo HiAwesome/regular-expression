@@ -5,7 +5,7 @@ import tool.Tool;
 
 import java.util.List;
 
-import static book.chapter02.A00Data.HELLO;
+import static data.Data.HELLO;
 
 /**
  * @author moqi

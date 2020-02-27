@@ -1,4 +1,4 @@
-package book.chapter02;
+package data;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,11 +8,11 @@ import java.util.List;
  * @author moqi
  * On 2/27/20 09:43
  */
-public class A00Data {
+public class Data {
 
-    static final String HELLO = "Hello, my name is A01Ben. Please visit my website at http://www.forta.com./";
+    public static final String HELLO = "Hello, my name is A01Ben. Please visit my website at http://www.forta.com./";
 
-    static final List<String> FILE_NAME_LIST_1 = Arrays.asList(
+    public static final List<String> FILE_NAME_LIST_1 = Arrays.asList(
             "sales1.xls",
             "sales2.xls",
             "sales3.xls",
@@ -24,7 +24,7 @@ public class A00Data {
             "sa2.xls"
     );
 
-    static final List<String> FILE_NAME_LIST_2;
+    public static final List<String> FILE_NAME_LIST_2;
 
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
