@@ -36,6 +36,8 @@ public class Data {
 
     public static final String REGULAR_TEXT_3 = "if (myArray[0] == 0) {}";
 
+    public static final String REGULAR_TEXT_4 = "\\home\\ben\\sales\\";
+
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
         list2.add("sales.xls");
