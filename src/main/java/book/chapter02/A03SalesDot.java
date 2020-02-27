@@ -5,7 +5,7 @@ import tool.Tool;
 
 import java.util.List;
 
-import static book.chapter02.A00Data.FILE_NAME_LIST;
+import static book.chapter02.A00Data.FILE_NAME_LIST_1;
 
 /**
  * @author moqi
@@ -15,7 +15,7 @@ import static book.chapter02.A00Data.FILE_NAME_LIST;
 public class A03SalesDot {
 
     public static void main(String[] args) {
-        List<String> list = Tool.patternList("sales.", FILE_NAME_LIST);
+        List<String> list = Tool.patternList("sales.", FILE_NAME_LIST_1);
         // 2020-02-27 10:03:28 INFO  A03SalesDot:20 - list:[sales1, sales2, sales3]
         log.info("list:{}", list);
     }
