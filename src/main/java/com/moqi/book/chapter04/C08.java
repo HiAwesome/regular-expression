@@ -18,7 +18,7 @@ public class C08 {
      * 2020-02-27 13:49:02 INFO  C08:23 - list:[#336633, #FFFFFF]
      */
     public static void main(String[] args) {
-        // Java Pattern support POSIX character
+        // Java Pattern support POSIX character, see here: https://stackoverflow.com/q/6612870
         List<String> list = Tool.patternString("#\\p{XDigit}\\p{XDigit}\\p{XDigit}\\p{XDigit}\\p{XDigit}\\p{XDigit}", TEXT_07_TXT);
         log.info("list:{}", list);
     }
