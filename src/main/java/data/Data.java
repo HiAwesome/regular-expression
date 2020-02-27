@@ -26,10 +26,16 @@ public class Data {
 
     public static final List<String> FILE_NAME_LIST_2;
 
+    public static final List<String> FILE_NAME_LIST_3;
+
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
         list2.add("sales.xls");
         FILE_NAME_LIST_2 = list2;
+
+        List<String> list3 = new ArrayList<>(FILE_NAME_LIST_1);
+        list3.add("ca1.xls");
+        FILE_NAME_LIST_3 = list3;
     }
 
 }
