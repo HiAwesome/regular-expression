@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.TEXT_10_FILE_PATH;
+import static com.moqi.data.Data.TEXT_10_TXT;
 
 /**
  * @author moqi
@@ -18,7 +18,7 @@ public class C04 {
      * 2020-02-27 10:39:59 INFO  C02:22 - list:[myArray[0]]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternString("\\r\\n\\r\\n", Tool.getStringFromFile(TEXT_10_FILE_PATH));
+        List<String> list = Tool.patternString("\\r\\n\\r\\n", TEXT_10_TXT);
         log.info("list:{}", list);
     }
 

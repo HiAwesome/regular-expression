@@ -38,23 +38,6 @@ public class Tool {
     }
 
     /**
-     * 正则匹配数组字符串
-     */
-    public static List<String> patternList(String regex, List<String> sourceList) {
-        Pattern pattern = Pattern.compile(regex);
-        List<String> list = new ArrayList<>();
-
-        sourceList.forEach(x -> {
-            Matcher matcher = pattern.matcher(x);
-            while (matcher.find()) {
-                list.add(matcher.group());
-            }
-        });
-
-        return list;
-    }
-
-    /**
      * 将整个文件读取为一个字符串
      */
     public static String getStringFromFile(String filePath) {

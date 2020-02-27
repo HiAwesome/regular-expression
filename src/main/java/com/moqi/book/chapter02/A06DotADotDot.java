@@ -5,7 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.FILE_NAME_LIST_1;
+import static com.moqi.data.Data.TEXT_02_TXT;
+
 
 /**
  * @author moqi
@@ -18,7 +19,7 @@ public class A06DotADotDot {
      * 2020-02-27 10:11:14 INFO  A06DotADotDot:22 - list:[sale, sale, sale, pac1, na1., na2., sa2.]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternList(".a..", FILE_NAME_LIST_1);
+        List<String> list = Tool.patternString(".a..", TEXT_02_TXT);
         log.info("list:{}", list);
     }
 

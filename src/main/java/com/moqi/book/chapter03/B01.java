@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.FILE_NAME_LIST_3;
+import static com.moqi.data.Data.TEXT_04_TXT;
 
 /**
  * @author moqi
@@ -18,7 +18,7 @@ public class B01 {
      * 2020-02-27 10:19:45 INFO  B01:22 - list:[na1.xls, na2.xls, sa2.xls]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternList("[ns]a.\\.xls", FILE_NAME_LIST_3);
+        List<String> list = Tool.patternString("[ns]a.\\.xls", TEXT_04_TXT);
         log.info("list:{}", list);
     }
 
