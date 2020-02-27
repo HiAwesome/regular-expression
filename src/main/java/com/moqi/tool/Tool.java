@@ -1,4 +1,4 @@
-package tool;
+package com.moqi.tool;
 
 import java.util.ArrayList;
 import java.util.List;

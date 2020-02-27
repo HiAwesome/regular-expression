@@ -1,11 +1,11 @@
-package book.chapter03;
+package com.moqi.book.chapter03;
 
+import com.moqi.tool.Tool;
 import lombok.extern.slf4j.Slf4j;
-import tool.Tool;
 
 import java.util.List;
 
-import static data.Data.FILE_NAME_LIST_3;
+import static com.moqi.data.Data.FILE_NAME_LIST_3;
 
 /**
  * @author moqi

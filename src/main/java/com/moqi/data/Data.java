@@ -1,4 +1,4 @@
-package data;
+package com.moqi.data;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,6 +33,8 @@ public class Data {
     public static final List<String> FILE_NAME_LIST_4;
 
     public static final String REGULAR_TEXT_2 = "<BODY COLOR=\"#336633\" TEXT=\"#FFFFFF\">";
+
+    public static final String REGULAR_TEXT_3 = "if (myArray[0] == 0) {}";
 
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
