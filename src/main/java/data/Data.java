@@ -30,6 +30,8 @@ public class Data {
 
     public static final String REGULAR_TEXT_1 = "The phrase \"regular expression\" is often abbreviated as RegEx or regex.";
 
+    public static final List<String> FILE_NAME_LIST_4;
+
     static {
         List<String> list2 = new ArrayList<>(FILE_NAME_LIST_1);
         list2.add("sales.xls");
@@ -38,6 +40,10 @@ public class Data {
         List<String> list3 = new ArrayList<>(FILE_NAME_LIST_1);
         list3.add("ca1.xls");
         FILE_NAME_LIST_3 = list3;
+
+        List<String> list4 = new ArrayList<>(FILE_NAME_LIST_3);
+        list4.add("sam.xls");
+        FILE_NAME_LIST_4 = list4;
     }
 
 }
