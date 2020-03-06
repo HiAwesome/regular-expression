@@ -1,4 +1,4 @@
-package com.moqi.book.chapter04;
+package com.moqi.book.chapter05;
 
 import com.moqi.tool.Tool;
 import lombok.extern.slf4j.Slf4j;
@@ -12,14 +12,16 @@ import static com.moqi.data.Data.TEXT_10_TXT;
  * On 2/27/20 10:37
  */
 @Slf4j
-public class C04 {
+public class D08 {
 
     /**
-     * Mac 系统空行为 \n\n 所以这里没有匹配到
-     * 2020-02-27 13:34:12 INFO  C04:22 - list:[]
+     * 匹配到了空行
+     * 2020-03-06 23:29:05 INFO  D08:22 - list:[
+     * <p>
+     * ]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternString("\\r\\n\\r\\n", TEXT_10_TXT);
+        List<String> list = Tool.patternString("[\\r]?\\n[\\r]?\\n", TEXT_10_TXT);
         log.info("list:{}", list);
     }
 
