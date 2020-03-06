@@ -3,12 +3,14 @@ package com.moqi.tool;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 import static com.moqi.constant.Constant.EMPTY_STRING;
 
@@ -38,7 +40,7 @@ public class Tool {
     }
 
     /**
-     * 将整个文件读取为一个字符串
+     * 将整个文件读取为一行字符串
      */
     public static String getStringFromFile(String filePath) {
 
@@ -50,5 +52,25 @@ public class Tool {
 
         return EMPTY_STRING;
     }
+
+    /**
+     * 将整个文件读取为多个字符串
+     * 此种读取方式默认是有损耗的，会去掉每一行最后的分隔符，因此加上 \n
+     * 参考：
+     * https://stackoverflow.com/a/326440
+     * https://howtodoinjava.com/java/io/java-read-file-to-string-examples/
+     */
+    public static String getMultiStringFromFile(String filePath) {
+        StringBuilder stringBuilder = new StringBuilder();
+        try (Stream<String> lines = Files.lines(Paths.get(DATA_PREFIX + filePath), StandardCharsets.UTF_8)) {
+            lines.forEach(line -> stringBuilder.append(line).append("\n"));
+            return stringBuilder.toString();
+        } catch (IOException e) {
+            log.error("文件读取异常");
+        }
+
+        return EMPTY_STRING;
+    }
+
 
 }
