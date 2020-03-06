@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wsdl:definitions targetNamespace="http://tips.cf"
+  xmlns:impl="http://tips.cf"
+  xmlns:intf="http://tips.cf"
+  xmlns:apachesoap="http://xml.apache.org/xml-soap"
