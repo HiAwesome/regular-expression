@@ -29,5 +29,6 @@ public class Data {
     public static final String TEXT_18_TXT = Tool.getStringFromFile("test18.txt");
     public static final String TEXT_19_TXT = Tool.getStringFromFile("test19.txt");
     public static final String TEXT_20_TXT = Tool.getStringFromFile("test20.txt");
+    public static final String TEXT_21_TXT = Tool.getStringFromFile("test21.txt");
 
 }
