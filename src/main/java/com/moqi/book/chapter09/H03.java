@@ -12,12 +12,12 @@ import static com.moqi.data.Data.TEXT_33_TXT;
  * On 2/27/20 10:18
  */
 @Slf4j
-public class H02 {
+public class H03 {
 
-    private static final String REGEX = ".+(?=:)";
+    private static final String REGEX = ".+(:)";
 
     /**
-     * 2020-03-07 21:24:45 INFO  H02:24 - list:[http, https, ftp]
+     * 2020-03-07 21:25:40 INFO  H03:24 - list:[http:, https:, ftp:]
      */
     public static void main(String[] args) {
         List<String> list = Tool.patternString(REGEX, TEXT_33_TXT);

@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.TEXT_33_TXT;
+import static com.moqi.data.Data.TEXT_32_TXT;
 
 /**
  * @author moqi
@@ -14,13 +14,13 @@ import static com.moqi.data.Data.TEXT_33_TXT;
 @Slf4j
 public class H01 {
 
-    private static final String REGEX = ".+(?=:)";
+    private static final String REGEX = "<[tT][iI][tT][lL][eE]>.*</[tT][iI][tT][lL][eE]>";
 
     /**
-     * 2020-03-07 21:24:45 INFO  H01:24 - list:[http, https, ftp]
+     * 2020-03-07 21:30:47 INFO  H01:24 - list:[<TITLE>Ben Forta’s Homepage</TITLE>]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternString(REGEX, TEXT_33_TXT);
+        List<String> list = Tool.patternString(REGEX, TEXT_32_TXT);
         log.info("list:{}", list);
     }
 
