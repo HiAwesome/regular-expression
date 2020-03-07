@@ -8,7 +8,6 @@ import com.moqi.tool.Tool;
  */
 public class Data {
 
-
     public static final String TEXT_01_TXT = Tool.getStringFromFile("test01.txt");
     public static final String TEXT_02_TXT = Tool.getStringFromFile("test02.txt");
     public static final String TEXT_03_TXT = Tool.getStringFromFile("test03.txt");
@@ -34,5 +33,6 @@ public class Data {
     public static final String TEXT_23_TXT = Tool.getStringFromFile("test23.txt");
     public static final String TEXT_24_TXT = Tool.getMultiStringFromFile("test24.txt");
     public static final String TEXT_25_TXT = Tool.getStringFromFile("test25.txt");
+    public static final String TEXT_26_TXT = Tool.getStringFromFile("test26.txt");
 
 }
