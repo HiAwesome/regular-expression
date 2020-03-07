@@ -38,5 +38,6 @@ public class Data {
     public static final String TEXT_28_TXT = Tool.getStringFromFile("test28.txt");
     public static final String TEXT_29_TXT = Tool.getStringFromFile("test29.txt");
     public static final String TEXT_30_TXT = Tool.getStringFromFile("test30.txt");
+    public static final String TEXT_31_TXT = Tool.getStringFromFile("test31.txt");
 
 }
