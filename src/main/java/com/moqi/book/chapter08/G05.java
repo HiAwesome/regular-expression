@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
-import static com.moqi.data.Data.TEXT_30_TXT;
+import static com.moqi.data.Data.TEXT_29_TXT;
 
 /**
  * @author moqi
@@ -14,13 +14,13 @@ import static com.moqi.data.Data.TEXT_30_TXT;
 @Slf4j
 public class G05 {
 
-    private static final String REGEX = "[ ]+(\\w+)[ ]+\\1";
+    private static final String REGEX = "<[hH]([1-6])>.*</[hH]\\1>";
 
     /**
-     * 020-03-07 19:13:34 INFO  G04:24 - list:[ of of,  are are,  and and]
+     * 2020-03-07 19:29:13 INFO  G05:24 - list:[<H1>Welcome to my Homepage</H1>, <H2>ColdFusion</H2>, <H2>Wireless</H2>]
      */
     public static void main(String[] args) {
-        List<String> list = Tool.patternString(REGEX, TEXT_30_TXT);
+        List<String> list = Tool.patternString(REGEX, TEXT_29_TXT);
         log.info("list:{}", list);
     }
 
