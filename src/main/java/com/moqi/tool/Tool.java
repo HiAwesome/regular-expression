@@ -40,6 +40,19 @@ public class Tool {
     }
 
     /**
+     * 正则替换字符串
+     */
+    public static void regexReplaceAllString(String regex, String sourceString, String replacement) {
+        log.info("sourceString: {}", sourceString);
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(sourceString);
+
+        String after = matcher.replaceAll(replacement);
+        log.info("after: {}", after);
+    }
+
+
+    /**
      * 将整个文件读取为一行字符串
      */
     public static String getStringFromFile(String filePath) {
