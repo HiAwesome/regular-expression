@@ -9,6 +9,7 @@ import static com.moqi.data.Data.TEXT_38_TXT;
 
 /**
  * Java 不支持正则表达式前后查找条件
+ * 可以看本项目中 Perl 语言实现的此案例： search_conditions_before_and_after_01.pl
  *
  * @author moqi
  * On 2/27/20 10:18
