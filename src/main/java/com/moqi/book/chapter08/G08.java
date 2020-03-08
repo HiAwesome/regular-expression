@@ -12,9 +12,11 @@ import static com.moqi.data.Data.TEXT_29_TXT;
 
 /**
  * 由于 Java 不支持正则替换的大小写转换，因此需求需要调用 String 的方法实现。
+ * 可以看本项目中 Perl 语言实现的此案例： case_conversion_01.pl
+ * <p>
  * 顺便补充一下：
  * IntelliJ IDEA 支持正则替换大小写，
- * 即可以使用 \U$1\E 类的语法将原表达式第一组全部替换为大写
+ * 即可以使用 \U$1\E 类的语法将原表达式第一组全部替换为大写。
  *
  * @author moqi
  * On 2/27/20 13:53
