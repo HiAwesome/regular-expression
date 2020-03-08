@@ -8,8 +8,6 @@ import java.util.List;
 import static com.moqi.data.Data.TEXT_38_TXT;
 
 /**
- * Java 不支持正则表达式嵌入条件
- *
  * @author moqi
  * On 2/27/20 10:18
  */
