@@ -1,6 +1,6 @@
 # Regular expression
 
-* 参考书：[正则表达式必知必会](https://book.douban.com/subject/26285406/) 
+* 参考书：[正则表达式必知必会](https://book.douban.com/subject/26285406/) 。
 
 * 正则表达式练习：大多数实现使用 Java，Java 实现不了的部分使用 Perl。
 
