@@ -73,6 +73,7 @@ public class Tool {
      * https://stackoverflow.com/a/326440
      * https://howtodoinjava.com/java/io/java-read-file-to-string-examples/
      */
+    @SuppressWarnings("unused")
     public static String getMultiStringFromFile(String filePath) {
         StringBuilder stringBuilder = new StringBuilder();
         try (Stream<String> lines = Files.lines(Paths.get(DATA_PREFIX + filePath), StandardCharsets.UTF_8)) {
