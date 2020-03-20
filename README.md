@@ -1,4 +1,4 @@
-# Regular expression
+# Regular Expression
 
 * 参考书：[正则表达式必知必会](https://book.douban.com/subject/26285406/) 。
 
