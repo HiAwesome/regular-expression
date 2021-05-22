@@ -20,17 +20,17 @@
         <junit-jupiter.version>5.5.1</junit-jupiter.version>
         <groovy-all.version>2.5.7</groovy-all.version>
         <cglib-nodep.version>3.3.0</cglib-nodep.version>
-        <objenesis.version>3.0.1</objenesis.version>
+        <objenesis.version>3.2</objenesis.version>
         <byte-buddy.version>1.10.1</byte-buddy.version>
         <gmavenplus-plugin.version>1.7.1</gmavenplus-plugin.version>
         <surefire-junit47.version>3.0.0-M3</surefire-junit47.version>
 
         <!-- common com.moqi.tool library -->
         <slf4j.version>1.7.29</slf4j.version>
-        <lombok.version>1.18.10</lombok.version>
-        <apache.common.lang3.version>3.9</apache.common.lang3.version>
-        <fastjson.version>1.2.58</fastjson.version>
-        <guava.version>29.0-jre</guava.version>
+        <lombok.version>1.18.20</lombok.version>
+        <apache.common.lang3.version>3.12.0</apache.common.lang3.version>
+        <fastjson.version>1.2.76</fastjson.version>
+        <guava.version>30.1.1-jre</guava.version>
 
         <!-- maven plugins -->
         <maven.compiler.plugin.java.version>1.8</maven.compiler.plugin.java.version>
