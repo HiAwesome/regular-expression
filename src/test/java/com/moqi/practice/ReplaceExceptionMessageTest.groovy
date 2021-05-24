@@ -44,4 +44,28 @@ class ReplaceExceptionMessageTest extends Specification {
         ReplaceExceptionMessage.handleAllParameter(source) == "namespaceName: must not be blank, serviceName: must not be blank, namespaceName: size must be between 4 and 32, key: must not be blank, [1].extension: Must be json string, [1].another: Must be json string"
     }
 
+    def "test all parameter 2"() {
+        when:
+        def source = "listByTwoNames.namespaceName: must not be blank, listByTwoNames.serviceName: must not be blank"
+
+        then:
+        ReplaceExceptionMessage.handleAllParameter(source) == "namespaceName: must not be blank, serviceName: must not be blank"
+    }
+
+    def "test all parameter 3"() {
+        when:
+        def source = "addEnv.onlyFunctionPo.namespaceName: size must be between 4 and 32, addEnv.po.key: must not be blank"
+
+        then:
+        ReplaceExceptionMessage.handleAllParameter(source) == "namespaceName: size must be between 4 and 32, key: must not be blank"
+    }
+
+    def "test all parameter 4"() {
+        when:
+        def source = "batchAddPort.poPortList[1].extension: Must be json string, batchAddPort.poPortList[1].another: Must be json string"
+
+        then:
+        ReplaceExceptionMessage.handleAllParameter(source) == "[1].extension: Must be json string, [1].another: Must be json string"
+    }
+
 }
