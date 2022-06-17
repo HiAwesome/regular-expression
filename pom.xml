@@ -29,7 +29,7 @@
         <slf4j.version>1.7.29</slf4j.version>
         <lombok.version>1.18.20</lombok.version>
         <apache.common.lang3.version>3.12.0</apache.common.lang3.version>
-        <fastjson.version>1.2.76</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <guava.version>30.1.1-jre</guava.version>
 
         <!-- maven plugins -->
